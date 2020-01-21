@@ -1,5 +1,5 @@
 //
-//  AuthViewController.swift
+//  FeedViewController.swift
 //  vkClient
 //
 //  Created by Egor Tereshonok on 1/21/20.
@@ -7,25 +7,17 @@
 //
 
 import UIKit
-import VK_ios_sdk
 
-
-class AuthViewController: UIViewController {
-    
-    private var authService: AuthService!
+class FeedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = #colorLiteral(red: 0.3725763559, green: 0.679697752, blue: 0.9031428695, alpha: 1)
 
         // Do any additional setup after loading the view.
-        //authService = AuthService()
-        authService = AppDelegate.shared().authService
     }
     
 
-    @IBAction func signInButton() {
-        authService.wakeUpSession()
-    }
     /*
     // MARK: - Navigation
 

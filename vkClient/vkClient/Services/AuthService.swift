@@ -9,7 +9,7 @@
 import Foundation
 import VK_ios_sdk
 
-protocol AuthServiceDelegate {
+protocol AuthServiceDelegate: class {
     func authServiceShouldShow(_ viewContloller: UIViewController)
     func authServiceSignIn()
     func authServiceDidSignInFail()
@@ -17,10 +17,10 @@ protocol AuthServiceDelegate {
 
 final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     
-    private let appId = "6869574"
+    private let appId = "7289573"
     private let vkSdk: VKSdk
     
-    var delegate: AuthServiceDelegate?
+   weak var delegate: AuthServiceDelegate?
         
     override init() {
         vkSdk = VKSdk.initialize(withAppId: appId)
@@ -33,16 +33,16 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
     func wakeUpSession() {
         let scope = ["offline"]
         
-        VKSdk.wakeUpSession(scope) { (state, error) in
+        VKSdk.wakeUpSession(scope) { [delegate] (state, error) in
             if state == VKAuthorizationState.authorized {
                 print("VKAuthorizationState.authorized")
-                self.delegate?.authServiceSignIn()
+                delegate?.authServiceSignIn()
             } else if state == VKAuthorizationState.initialized {
                 print("VKAuthorizationState.initialized")
                 VKSdk.authorize(scope)
             } else {
                 print("auth problems, state \(state) error \(String(describing: error))")
-                self.delegate?.authServiceDidSignInFail()
+                delegate?.authServiceDidSignInFail()
             }
         }
     }
@@ -51,7 +51,9 @@ final class AuthService: NSObject, VKSdkDelegate, VKSdkUIDelegate {
 
     func vkSdkAccessAuthorizationFinished(with result: VKAuthorizationResult!) {
         print(#function)
+        if result.token != nil {
         delegate?.authServiceSignIn()
+        }
     }
     
     func vkSdkUserAuthorizationFailed() {
