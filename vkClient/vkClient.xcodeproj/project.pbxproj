@@ -11,6 +11,8 @@
 		910B040C23D7378100496F77 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910B040B23D7378100496F77 /* FeedViewController.swift */; };
 		910B040E23D737AE00496F77 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910B040D23D737AE00496F77 /* FeedViewController.storyboard */; };
 		910B041023D73A9300496F77 /* UIViewController + Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910B040F23D73A9300496F77 /* UIViewController + Storyboard.swift */; };
+		9118405323D88E2700E2B227 /* FeedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118405223D88E2700E2B227 /* FeedResponse.swift */; };
+		9118405523D894C000E2B227 /* NetworkDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9118405423D894C000E2B227 /* NetworkDataFetcher.swift */; };
 		915E4D4823D7135700597851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915E4D4723D7135700597851 /* AppDelegate.swift */; };
 		915E4D5123D7135700597851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 915E4D5023D7135700597851 /* Assets.xcassets */; };
 		915E4D5423D7135700597851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 915E4D5223D7135700597851 /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 		910B040B23D7378100496F77 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedViewController.swift; path = vkClient/Auth/FeedViewController/FeedViewController.swift; sourceTree = SOURCE_ROOT; };
 		910B040D23D737AE00496F77 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		910B040F23D73A9300496F77 /* UIViewController + Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Storyboard.swift"; sourceTree = "<group>"; };
+		9118405223D88E2700E2B227 /* FeedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedResponse.swift; sourceTree = "<group>"; };
+		9118405423D894C000E2B227 /* NetworkDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetcher.swift; sourceTree = "<group>"; };
 		915E4D4423D7135700597851 /* vkClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vkClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		915E4D4723D7135700597851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		915E4D5023D7135700597851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -72,7 +76,9 @@
 		910B040923D735DC00496F77 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9118405123D88DF700E2B227 /* Models */,
 				91DB38FB23D71A910067E20E /* AuthService.swift */,
+				9118405423D894C000E2B227 /* NetworkDataFetcher.swift */,
 				91A0CF7323D77740007FA326 /* NetworkService.swift */,
 				91A0CF7523D77857007FA326 /* API.swift */,
 			);
@@ -95,6 +101,14 @@
 				910B040F23D73A9300496F77 /* UIViewController + Storyboard.swift */,
 			);
 			path = "Extensions and Helpers";
+			sourceTree = "<group>";
+		};
+		9118405123D88DF700E2B227 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9118405223D88E2700E2B227 /* FeedResponse.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		915E4D3B23D7135700597851 = {
@@ -254,11 +268,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9118405323D88E2700E2B227 /* FeedResponse.swift in Sources */,
 				915E4D4823D7135700597851 /* AppDelegate.swift in Sources */,
 				910B041023D73A9300496F77 /* UIViewController + Storyboard.swift in Sources */,
 				91DB38FE23D71AE10067E20E /* AuthViewController.swift in Sources */,
 				910B040C23D7378100496F77 /* FeedViewController.swift in Sources */,
 				91A0CF7423D77740007FA326 /* NetworkService.swift in Sources */,
+				9118405523D894C000E2B227 /* NetworkDataFetcher.swift in Sources */,
 				91DB38FC23D71A910067E20E /* AuthService.swift in Sources */,
 				91A0CF7623D77857007FA326 /* API.swift in Sources */,
 			);
