@@ -27,7 +27,7 @@ class NewsfeedCell: UITableViewCell {
     
     //topView
     
-    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var iconImageView: WebImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dataLabel: UILabel!
     
@@ -48,6 +48,7 @@ class NewsfeedCell: UITableViewCell {
     }
    
     func set(viewModel: FeedCellViewModel) {
+        iconImageView.set(imageURL: viewModel.iconUrlString)
         nameLabel.text = viewModel.name
         dataLabel.text = viewModel.date
         postLabel.text = viewModel.text

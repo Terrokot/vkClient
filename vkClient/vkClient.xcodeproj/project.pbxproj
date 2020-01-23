@@ -30,6 +30,7 @@
 		91FD6B3323D9AF9C00CA3CA9 /* NewsfeedInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD6B2C23D9AF9C00CA3CA9 /* NewsfeedInteractor.swift */; };
 		91FD6B6023D9BB5E00CA3CA9 /* NewsfeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD6B5E23D9BB5E00CA3CA9 /* NewsfeedCell.swift */; };
 		91FD6B6123D9BB5E00CA3CA9 /* NewsfeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 91FD6B5F23D9BB5E00CA3CA9 /* NewsfeedCell.xib */; };
+		91FD6B6323D9D3AB00CA3CA9 /* WebImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FD6B6223D9D3AB00CA3CA9 /* WebImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		91FD6B2C23D9AF9C00CA3CA9 /* NewsfeedInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedInteractor.swift; sourceTree = "<group>"; };
 		91FD6B5E23D9BB5E00CA3CA9 /* NewsfeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsfeedCell.swift; sourceTree = "<group>"; };
 		91FD6B5F23D9BB5E00CA3CA9 /* NewsfeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsfeedCell.xib; sourceTree = "<group>"; };
+		91FD6B6223D9D3AB00CA3CA9 /* WebImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebImageView.swift; sourceTree = "<group>"; };
 		A0CE6AE584DDE687D78793BE /* Pods-vkClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vkClient.release.xcconfig"; path = "Target Support Files/Pods-vkClient/Pods-vkClient.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				910B040F23D73A9300496F77 /* UIViewController + Storyboard.swift */,
+				91FD6B6223D9D3AB00CA3CA9 /* WebImageView.swift */,
 			);
 			path = "Extensions and Helpers";
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FD6B2E23D9AF9C00CA3CA9 /* NewsfeedPresenter.swift in Sources */,
+				91FD6B6323D9D3AB00CA3CA9 /* WebImageView.swift in Sources */,
 				9118405323D88E2700E2B227 /* FeedResponse.swift in Sources */,
 				91FD6B3023D9AF9C00CA3CA9 /* NewsfeedRouter.swift in Sources */,
 				91FD6B3223D9AF9C00CA3CA9 /* NewsfeedViewController.swift in Sources */,
