@@ -29,6 +29,8 @@ protocol FeedCellphotoAttachmentViewModel {
 class NewsfeedCell: UITableViewCell {
     
     
+    
+    
     static let reuseId = "NewsfeedCell"
     
     //topView
@@ -54,17 +56,21 @@ class NewsfeedCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        //iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
-        //iconImageView.clipsToBounds = true
         
-     //   cardView.layer.cornerRadius = 10
-    //    cardView.clipsToBounds = true
         
         backgroundColor = .clear
         selectionStyle = .none
     }
+    /*
+    func setupCell() {
+        iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
+        iconImageView.clipsToBounds = true
+        cardView.layer.cornerRadius = 10
+        cardView.clipsToBounds = true
+    }
+ */
     
-   
+    
     func set(viewModel: FeedCellViewModel) {
         iconImageView.set(imageURL: viewModel.iconUrlString)
         nameLabel.text = viewModel.name
@@ -80,6 +86,8 @@ class NewsfeedCell: UITableViewCell {
         } else {
             postImageView.isHidden = true
         }
+        
+        
     }
     
 }

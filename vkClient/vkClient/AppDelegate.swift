@@ -54,6 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthServiceDelegate {
     }
     
     func authServiceDidSignInFail() {
+        VKSdk.forceLogout()
         print(#function)
         
     }
