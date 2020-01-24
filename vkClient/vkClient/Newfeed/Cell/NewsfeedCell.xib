@@ -42,8 +42,8 @@
                         </subviews>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CMY-Ch-2yi">
-                        <rect key="frame" x="9" y="59" width="667" height="221"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="9" y="59" width="667" height="112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -122,6 +122,10 @@
                             </view>
                         </subviews>
                     </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oQF-MG-oRi" customClass="WebImageView" customModule="vkClient" customModuleProvider="target">
+                        <rect key="frame" x="9" y="179" width="657" height="101"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    </imageView>
                 </subviews>
             </tableViewCellContentView>
             <connections>
@@ -130,11 +134,12 @@
                 <outlet property="iconImageView" destination="nFq-dn-4KM" id="NZ1-E5-wVk"/>
                 <outlet property="likesLabel" destination="3R9-SJ-yQo" id="SwA-2Z-Xhl"/>
                 <outlet property="nameLabel" destination="ra7-sL-ZJ7" id="LqG-cb-Z5Y"/>
+                <outlet property="postImageView" destination="oQF-MG-oRi" id="06R-f4-e5q"/>
                 <outlet property="postLabel" destination="CMY-Ch-2yi" id="fFX-KO-awY"/>
                 <outlet property="sharesLabel" destination="EjP-5X-MlU" id="6wo-aZ-vdj"/>
                 <outlet property="viewsLabel" destination="8u6-L0-uqy" id="tAe-kd-wFR"/>
             </connections>
-            <point key="canvasLocation" x="-912" y="125"/>
+            <point key="canvasLocation" x="-913.04347826086962" y="124.55357142857142"/>
         </tableViewCell>
     </objects>
     <resources>
