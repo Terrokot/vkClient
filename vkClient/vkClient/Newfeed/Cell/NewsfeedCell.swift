@@ -28,9 +28,6 @@ protocol FeedCellphotoAttachmentViewModel {
 
 class NewsfeedCell: UITableViewCell {
     
-    
-    
-    
     static let reuseId = "NewsfeedCell"
     
     //topView
