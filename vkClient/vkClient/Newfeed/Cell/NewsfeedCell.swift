@@ -58,17 +58,16 @@ class NewsfeedCell: UITableViewCell {
         backgroundColor = .clear
         selectionStyle = .none
     }
-    /*
     func setupCell() {
         iconImageView.layer.cornerRadius = iconImageView.frame.width / 2
         iconImageView.clipsToBounds = true
         cardView.layer.cornerRadius = 10
         cardView.clipsToBounds = true
     }
- */
     
     
     func set(viewModel: FeedCellViewModel) {
+        setupCell()
         iconImageView.set(imageURL: viewModel.iconUrlString)
         nameLabel.text = viewModel.name
         dataLabel.text = viewModel.date
