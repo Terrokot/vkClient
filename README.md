@@ -9,7 +9,7 @@ features:
 ***
 Pods have been added in commit for your ease of assembly
 ***
-Some posts may appear "empty", this happen because app don't support audi/video/gif support now
+Some posts may appear "empty", this happen because app don't support audio/video/gif now
 ***
 Soon: 
 1) Second screen with account profile information
