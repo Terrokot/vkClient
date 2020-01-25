@@ -9,7 +9,7 @@ features:
 ***
 Pods have been added in commit for your ease of assembly
 ***
-Some posts may appear "empty", this happen because VK api does't give information about reposts
+Some posts may appear "empty", this happen because app don't support audi/video/gif support now
 ***
 Soon: 
 1) Second screen with account profile information
