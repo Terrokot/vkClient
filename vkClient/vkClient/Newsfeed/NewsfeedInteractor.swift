@@ -30,7 +30,7 @@ class NewsfeedInteractor: NewsfeedBusinessLogic {
         fetcher.getFeed { [weak self] (feedResponse) in
             
             feedResponse?.items.map({ (feedItem) in
-                print(feedItem.attachments)
+                print(feedItem.copyHistory)
             })
             
             guard let feedResponse = feedResponse else { return }
