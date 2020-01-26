@@ -54,10 +54,21 @@ final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
             
             postLabelFrame.size = CGSize(width: width, height: height)
         }
+        //MARK: Work with attachmentFrame
+        let attachmentTop = postLabelFrame.size == CGSize.zero ? Constants.postLabelInserts.top : postLabelFrame.maxY + Constants.postLabelInserts.bottom
+        var attachmentFrame = CGRect(origin: CGPoint(x: 0, y: attachmentTop), size: CGSize.zero)
+
+        
+        if let attachment = photoAttachment {
+            let ratio = CGFloat ( Float(attachment.height) / Float(attachment.width) )
+            attachmentFrame.size = CGSize(width: cardViewWidth, height: cardViewWidth * ratio)
+        }
+        
+        
         return Sizes(postLabelFrame: postLabelFrame,
-                     attachmentFrame: CGRect.zero,
+                     attachmentFrame: attachmentFrame,
                      bottomViewFrame: CGRect.zero,
-                     totalHeight: 500)
+                     totalHeight: 600)
     }
     
     
