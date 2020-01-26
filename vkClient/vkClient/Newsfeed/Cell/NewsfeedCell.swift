@@ -59,7 +59,10 @@ class NewsfeedCell: UITableViewCell {
     
     @IBOutlet weak var cardView: UIView!
     
-    
+    override func prepareForReuse() {
+        iconImageView.set(imageURL: nil)
+        postImageView.set(imageURL: nil)
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
