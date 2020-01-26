@@ -27,6 +27,7 @@ struct Constants {
     static let topViewHeight: CGFloat = 36
     static let postLabelInserts = UIEdgeInsets(top: 8 + Constants.topViewHeight + 8, left: 8, bottom: 8, right: 8)
     static let postLabelFont = UIFont.systemFont(ofSize: 15)
+    static let bottomViewHeight: CGFloat = 44
 }
 
 final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
@@ -55,6 +56,7 @@ final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
             postLabelFrame.size = CGSize(width: width, height: height)
         }
         //MARK: Work with attachmentFrame
+        
         let attachmentTop = postLabelFrame.size == CGSize.zero ? Constants.postLabelInserts.top : postLabelFrame.maxY + Constants.postLabelInserts.bottom
         var attachmentFrame = CGRect(origin: CGPoint(x: 0, y: attachmentTop), size: CGSize.zero)
 
@@ -64,11 +66,23 @@ final class FeedCellLayoutCalculator: FeedCellLayoutCalculatorProtocol {
             attachmentFrame.size = CGSize(width: cardViewWidth, height: cardViewWidth * ratio)
         }
         
+        //MARK: Work with bottomViewFrame
+        
+        let bottomViewTop = max(postLabelFrame.maxY, attachmentFrame.maxY)
+        
+        let bottomViewFrame = CGRect(origin: CGPoint(x: 0, y: bottomViewTop),
+                                     size: CGSize(width: cardViewWidth, height: Constants.bottomViewHeight))
+        
+        //MARK: Work with totalHeight
+
+        
+        let totalHeight = bottomViewFrame.maxY + Constants.cardInserts.bottom
+
         
         return Sizes(postLabelFrame: postLabelFrame,
                      attachmentFrame: attachmentFrame,
-                     bottomViewFrame: CGRect.zero,
-                     totalHeight: 600)
+                     bottomViewFrame: bottomViewFrame,
+                     totalHeight: totalHeight)
     }
     
     

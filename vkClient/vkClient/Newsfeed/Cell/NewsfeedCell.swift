@@ -93,7 +93,7 @@ class NewsfeedCell: UITableViewCell {
         
         postLabel.frame = viewModel.sizes.postLabelFrame
         postImageView.frame = viewModel.sizes.attachmentFrame
-        //bottomView.frame = viewModel.sizes.bottomViewFrame
+        bottomView.frame = viewModel.sizes.bottomViewFrame
         
         
         
