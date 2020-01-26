@@ -25,6 +25,8 @@ protocol FeedCellViewModel {
 protocol FeedCellSizes {
     var postLabelFrame: CGRect { get }
     var attachmentFrame: CGRect { get }
+    var bottomViewFrame: CGRect { get }
+    var totalHeight: CGFloat { get }
 }
 protocol FeedCellphotoAttachmentViewModel {
     var photoUrlString: String? { get }
@@ -53,8 +55,11 @@ class NewsfeedCell: UITableViewCell {
     @IBOutlet weak var commentsLabel: UILabel!
     @IBOutlet weak var sharesLabel: UILabel!
     @IBOutlet weak var viewsLabel: UILabel!
+    @IBOutlet weak var bottomView: UIView!
     
     @IBOutlet weak var cardView: UIView!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -85,6 +90,9 @@ class NewsfeedCell: UITableViewCell {
         
         postLabel.frame = viewModel.sizes.postLabelFrame
         postImageView.frame = viewModel.sizes.attachmentFrame
+        //bottomView.frame = viewModel.sizes.bottomViewFrame
+        
+        
         
         if let photoAttachment = viewModel.photoAttachment {
             postImageView.set(imageURL: photoAttachment.photoUrlString)

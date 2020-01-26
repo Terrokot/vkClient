@@ -18,6 +18,7 @@
 		9176307923DC6A7300D8B903 /* NewsfeedCellLayoutCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9176307823DC6A7300D8B903 /* NewsfeedCellLayoutCalculator.swift */; };
 		91A0CF7423D77740007FA326 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0CF7323D77740007FA326 /* NetworkService.swift */; };
 		91A0CF7623D77857007FA326 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0CF7523D77857007FA326 /* API.swift */; };
+		91C69EC723DDF1DB0042331F /* String + Height.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C69EC623DDF1DB0042331F /* String + Height.swift */; };
 		91DB38FC23D71A910067E20E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DB38FB23D71A910067E20E /* AuthService.swift */; };
 		91DB38FE23D71AE10067E20E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DB38FD23D71AE10067E20E /* AuthViewController.swift */; };
 		91DB390023D71D870067E20E /* AuthViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DB38FF23D71D870067E20E /* AuthViewController.storyboard */; };
@@ -47,6 +48,7 @@
 		9176307823DC6A7300D8B903 /* NewsfeedCellLayoutCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsfeedCellLayoutCalculator.swift; sourceTree = "<group>"; };
 		91A0CF7323D77740007FA326 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		91A0CF7523D77857007FA326 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		91C69EC623DDF1DB0042331F /* String + Height.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Height.swift"; sourceTree = "<group>"; };
 		91DB38FB23D71A910067E20E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		91DB38FD23D71AE10067E20E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		91DB38FF23D71D870067E20E /* AuthViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AuthViewController.storyboard; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				910B040F23D73A9300496F77 /* UIViewController + Storyboard.swift */,
 				91FD6B6223D9D3AB00CA3CA9 /* WebImageView.swift */,
+				91C69EC623DDF1DB0042331F /* String + Height.swift */,
 			);
 			path = "Extensions and Helpers";
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91FD6B2E23D9AF9C00CA3CA9 /* NewsfeedPresenter.swift in Sources */,
+				91C69EC723DDF1DB0042331F /* String + Height.swift in Sources */,
 				91FD6B6323D9D3AB00CA3CA9 /* WebImageView.swift in Sources */,
 				9118405323D88E2700E2B227 /* FeedResponse.swift in Sources */,
 				91FD6B3023D9AF9C00CA3CA9 /* NewsfeedRouter.swift in Sources */,
