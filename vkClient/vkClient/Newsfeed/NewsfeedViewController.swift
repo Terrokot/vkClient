@@ -41,6 +41,10 @@ class NewsfeedViewController: UIViewController, NewsfeedDisplayLogic {
   
   // MARK: View lifecycle
   
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
+    
   override func viewDidLoad() {
     super.viewDidLoad()
     setup()
@@ -84,7 +88,5 @@ extension NewsfeedViewController: UITableViewDelegate, UITableViewDataSource {
         return cellViewModel.sizes.totalHeight
     }
     
-    
-    
-    
+  
 }
