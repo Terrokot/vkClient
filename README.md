@@ -14,5 +14,6 @@ Some posts may appear "empty", this happen because app don't support audio/video
 ***
 Soon: 
 1) Second screen with account profile information
-2) Collection view for attaches 
+2) Collection view for attachmets
 3) Support audio/video/gif attachments
+4) Auto-resizing text fields 
