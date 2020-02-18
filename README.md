@@ -11,7 +11,7 @@ Features:
 4) Beautiful UI
 ***
 Stack:
-Swift, VK SDK, VK API, GCD, URLSession
+  Swift, VK SDK, VK API, GCD, URLSession
 
 
 ***
