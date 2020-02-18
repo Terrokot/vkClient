@@ -11,6 +11,8 @@ Features:
 ***
 Stack: 
 Swift, VK SDK, VK API, GCD, URLSession
+
+
 ***
 Pods have been added in commit for your ease of assembly
 ***
