@@ -1,6 +1,6 @@
 # vkClient
 
-Simple app using VK SDK and VK API (api.vk.com)
+App using VK SDK and VK API (api.vk.com)
 After authorization with VK account we can see UITableView with news for logged in VK user(VK API)
 ***
 Features:
