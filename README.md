@@ -10,8 +10,8 @@ Features:
 3) Auto-resizing cells 
 4) Beautiful UI
 ***
-Stack:
-  Swift, VK SDK, VK API, GCD, URLSession
+Stack: 
+/n Swift, VK SDK, VK API, GCD, URLSession, Clean Swift Architecture
 
 
 ***
