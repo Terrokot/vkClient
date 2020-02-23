@@ -2,7 +2,7 @@
 
 App using VK SDK and VK API (api.vk.com)
 
-After authorization with VK account youcan see UITableView with news for logged VK user.
+After authorization with VK account you can see UITableView with news for logged VK user.
 ***
 Features:
 1) Use cached data to save you traffic
